@@ -1,12 +1,11 @@
 # Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation
 
----
 This is the official repo of our paper:
 
 **Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation**  
 [__***Min-Hung Chen***__](https://www.linkedin.com/in/chensteven), [Baopu Li](https://www.linkedin.com/in/paul-lee-46b2382b/), [Yingze Bao](https://www.linkedin.com/in/yingze/), [Zsolt Kira](https://www.cc.gatech.edu/~zk15/), [Ghassan AlRegib (Advisor)](https://ghassanalregib.info/) <br>
 [IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020](http://cvpr2020.thecvf.com/)   
-[arXiv (coming soon!)]
+[[arXiv](https://arxiv.org/abs/2003.02824)]
 
 <p align="center">
 <img src="webpage/Overview.png?raw=true" width="70%">
