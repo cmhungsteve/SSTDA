@@ -28,7 +28,7 @@ def predict(model, model_dir, results_dir, features_path, vid_list_file, epoch, 
         file_ptr.close()
         for vid in list_of_vids:
             if verbose:
-                print(vid)  # uncomment for debugging
+                print(vid)  
 
             features = np.load(features_path + vid.split('.')[0] + '.npy')
             features = features[:, ::sample_rate]

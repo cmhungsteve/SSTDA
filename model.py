@@ -62,7 +62,7 @@ class AdvDomainClsBase(nn.Module):
 
         feat = self.fc1(feat)
         feat = self.relu(feat)
-        feat = self.dropout(feat)  # may cause some performance variation
+        feat = self.dropout(feat)  
 
         return feat
 
@@ -146,10 +146,6 @@ class MultiStageModel(nn.Module):
             for s in range(num_stages):
                 self.centroids += [Centroid(num_f_maps, num_classes)]
 
-        # # initialization  # default for now
-        # for m in self.modules():
-        #     if isinstance(m, nn.Conv1d):
-        #         nn.init.xavier_normal_(m.weight)
 
     def forward(self, x_s, x_t, mask_s, mask_t, beta, reverse):
         # forward source & target data at the same time
@@ -165,13 +161,6 @@ class MultiStageModel(nn.Module):
         # concatenate domain predictions & labels (video-level)
         pred_d_video = torch.cat((pred_d_source_video, pred_d_target_video), 0)
         label_d_video = torch.cat((label_d_video_source, label_d_video_target), 0).long()
-
-        # 3. video-level DA w/ self-supervised learning (multi-class domain prediction)
-        # input:
-        # feat_source_video & feat_target_video: (batch, stage#, dim, seg#)
-        # outputs:
-        # pred_d_video: (batch, stage#, domain_class#)
-        # label_d_video: (batch, stage#)
 
         # self-supervised temporal domain adaptation
         if 'rev_grad_ssl' in self.DA_adv_video and self.use_target != 'none':
@@ -324,8 +313,6 @@ class MultiStageModel(nn.Module):
         if self.multi_adv[1] == 'Y':  # class-based domain discriminators w/ pseudo-labels
             for i in range(1, len(self.ad_net_cls)):
                 id_base = i if self.multi_adv[0] == 'Y' else 0  # decide whether to separate weights for discriminator base
-                # prob_class = prob[:, i:i+1, :].repeat(1, dim_feat, 1)  # i:i+1 ==> keep the dimension / (batch, dim, frame#)
-                # prob_class = prob_class.transpose(1, 2).reshape(-1, dim_feat)  # reshape to (batch x frame#, dim)
                 out_single_class = self.ad_net_cls[i](self.ad_net_base[id_base](feat, beta_value))
                 out_single_class = out_single_class.reshape(-1, num_frame, 2).transpose(1, 2)  # (batch, 2, frame#)
                 out = torch.cat((out, out_single_class.unsqueeze(1)), dim=1)  # out: (batch, class#, 2, frame#)
@@ -500,6 +487,6 @@ class DilatedResidualLayer(nn.Module):
     def forward(self, x):
         out = F.relu(self.conv_dilated(x))
         out = self.conv_1x1(out)
-        out = self.dropout(out)  # may cause some performance variation
+        out = self.dropout(out)  
         return x + out
 

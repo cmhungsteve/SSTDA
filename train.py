@@ -41,7 +41,6 @@ class Trainer:
         use_target = args.use_target
         ratio_source = args.ratio_source
         ratio_label_source = args.ratio_label_source
-        # use_best_model = args.use_best_model
         resume_epoch = args.resume_epoch
         # tensorboard
         use_tensorboard = args.use_tensorboard
@@ -105,7 +104,6 @@ class Trainer:
             writer = SummaryWriter(results_dir + '/tensorboard')  # for tensorboardX
 
         for epoch in range(resume_epoch, num_epochs):
-            # print('epoch: ', epoch)
             epoch_loss = 0
             correct_source = 0
             total_source = 0
@@ -137,7 +135,6 @@ class Trainer:
                 beta_in = [beta_in_0, beta_in_1]
                 gamma_in = adaptive_gamma if gamma < 0 else gamma
                 nu_in = adaptive_nu if nu < 0 else nu
-                # print('epoch: ', epoch, ', iter_now: ', iter_now, ', beta_in: ', beta_in)
 
                 # ====== Feed-forward data ====== #
                 # prepare inputs
@@ -281,9 +278,6 @@ class Trainer:
                             if place_ens[s] == 'Y':
                                 loss_ens = 0
                                 # calculate loss
-                                # _, _, _, _, prob_target, _, _, _, _, _, _, _, _, prob_target_2 \
-                                #     = model(input_source, input_target, mask_source, mask_target, beta_in, reverse=True)
-
                                 if DA_ens == 'MCD':
                                     loss_ens = -dis_mcd(prob_select_target, prob_select_target_2)
                                 elif DA_ens == 'SWD':
@@ -352,17 +346,11 @@ class Trainer:
                 acc_best_source = acc_epoch_source
                 torch.save(model.state_dict(), model_dir + "/acc_best_source.model")
                 torch.save(optimizer.state_dict(), model_dir + "/acc_best_source.opt")
-                # if use_best_model != 'none':
-                #     torch.save(model.state_dict(), model_dir + "/acc_best_source.model")
-                #     torch.save(optimizer.state_dict(), model_dir + "/acc_best_source.opt")
 
             if acc_epoch_target > acc_best_target:
                 acc_best_target = acc_epoch_target
                 torch.save(model.state_dict(), model_dir + "/acc_best_target.model")
                 torch.save(optimizer.state_dict(), model_dir + "/acc_best_target.opt")
-                # if use_best_model != 'none':
-                #     torch.save(model.state_dict(), model_dir + "/acc_best_target.model")
-                #     torch.save(optimizer.state_dict(), model_dir + "/acc_best_target.opt")
 
             if verbose:
                 print("[epoch %d]: epoch loss = %f,   acc (S) = %f,   acc (T) = %f,   beta = (%f, %f),   nu = %f" % (epoch + 1, epoch_loss / num_iter_epoch, acc_epoch_source, acc_epoch_target, beta_in[0], beta_in[1], nu_in))  # uncomment for debugging
@@ -407,11 +395,6 @@ class Trainer:
         # class probability as class weights
         classweight_stage = prob[:, s, :, :]  # select one stage --> (batch, class#, frame#)
         classweight_stage = classweight_stage.transpose(1, 2).reshape(-1, self.num_classes)  # (batch x frame#, class#)
-
-        # if source_lb_weight == 'real':  # use the real labels
-        #     label_mask_source = label_source.reshape(-1).clone()
-        #     label_mask_source[label_vector_source == -100] = 0
-        #     classweight_stage_source = F.one_hot(label_mask_source, num_classes=self.num_classes).float()
 
         # mask frames
         classweight_stage_select = classweight_stage[label_vector != -100]

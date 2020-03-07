@@ -17,7 +17,6 @@ class BatchGenerator(object):
 
     def reset(self):
         self.index = 0
-        # random.shuffle(self.list_of_examples)
 
     def has_next(self):
         if self.index < len(self.list_of_examples):
@@ -33,7 +32,6 @@ class BatchGenerator(object):
 
     def next_batch(self, batch_size, flag):
         batch = self.list_of_examples[self.index:self.index + batch_size]
-        # print(batch)  # uncomment when debugging
         self.index += batch_size
 
         # for re-loading target data

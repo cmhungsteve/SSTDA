@@ -112,9 +112,6 @@ if args.use_target == 'none':
     args.DA_ens = 'none'
     args.SS_video = 'none'  # focus on cross-domain setting
 
-# print setting
-# print("split: ", args.split)
-
 # use the full temporal resolution @ 15fps
 sample_rate = 1
 # sample input features @ 15fps instead of 30 fps

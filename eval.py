@@ -1,4 +1,3 @@
-# adapted from: https://github.com/colincsl/TemporalConvolutionalNetworks/blob/master/code/metrics.py
 
 import numpy as np
 import argparse
