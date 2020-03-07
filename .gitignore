@@ -1,0 +1,26 @@
+# Byte-compiled
+__pycache__/
+
+# Mac-related
+.DS_Store
+
+# experiment-related
+*exp*
+*experiment*
+
+# log file
+*.log
+
+# PyCharm
+.idea/
+
+# backup files
+*.bk
+*backup*
+
+# big files
+models/
+results/
+
+# do not want to upload
+*not_upload*
