@@ -1,5 +1,10 @@
 # Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/action-segmentation-with-joint-self/action-segmentation-on-gtea)](https://paperswithcode.com/sota/action-segmentation-on-gtea?p=action-segmentation-with-joint-self)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/action-segmentation-with-joint-self/action-segmentation-on-50-salads)](https://paperswithcode.com/sota/action-segmentation-on-50-salads?p=action-segmentation-with-joint-self)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/action-segmentation-with-joint-self/action-segmentation-on-breakfast)](https://paperswithcode.com/sota/action-segmentation-on-breakfast?p=action-segmentation-with-joint-self)
+
+---
 This is the official PyTorch implementation of our paper:
 
 **Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation**  
