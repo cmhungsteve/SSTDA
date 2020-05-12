@@ -8,7 +8,7 @@
 This is the official PyTorch implementation of our paper:
 
 **Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation**  
-[__***Min-Hung Chen***__](https://www.linkedin.com/in/chensteven), [Baopu Li](https://www.linkedin.com/in/paul-lee-46b2382b/), [Yingze Bao](https://www.linkedin.com/in/yingze/), [Zsolt Kira](https://www.cc.gatech.edu/~zk15/), [Ghassan AlRegib (Advisor)](https://ghassanalregib.info/) <br>
+[__***Min-Hung Chen***__](https://www.linkedin.com/in/chensteven), [Baopu Li](https://www.linkedin.com/in/paul-lee-46b2382b/), [Yingze Bao](https://www.linkedin.com/in/yingze/), [Ghassan AlRegib (Advisor)](https://ghassanalregib.info/), and [Zsolt Kira](https://www.cc.gatech.edu/~zk15/) <br>
 [*IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020*](http://cvpr2020.thecvf.com/)   
 [[arXiv](https://arxiv.org/abs/2003.02824)]
 
