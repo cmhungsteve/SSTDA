@@ -71,7 +71,7 @@ The script will do training, predicting and evaluation for all the splits on the
 
 ---
 ## Citation
-If you find this repository useful, please cite our paper:
+If you find this repository useful, please cite our papers:
 ```
 @inproceedings{chen2020action,
   title={Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation},
@@ -79,6 +79,13 @@ If you find this repository useful, please cite our paper:
   booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2020},
   url={https://arxiv.org/abs/2003.02824}
+}
+
+@inproceedings{chen2020mixed,
+  title={Action Segmentation with Mixed Temporal Domain Adaptation},
+  author={Chen, Min-Hung and Li, Baopu and Bao, Yingze and AlRegib, Ghassan},
+  booktitle={IEEE Winter Conference on Applications of Computer Vision (WACV)},
+  year={2020}
 }
 ```
 
