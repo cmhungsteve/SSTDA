@@ -10,7 +10,7 @@ This is the official PyTorch implementation of our paper:
 **Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation**  
 [__***Min-Hung Chen***__](https://www.linkedin.com/in/chensteven), [Baopu Li](https://www.linkedin.com/in/paul-lee-46b2382b/), [Yingze Bao](https://www.linkedin.com/in/yingze/), [Ghassan AlRegib (Advisor)](https://ghassanalregib.info/), and [Zsolt Kira](https://www.cc.gatech.edu/~zk15/) <br>
 [*IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020*](http://cvpr2020.thecvf.com/)   
-[[arXiv](https://arxiv.org/abs/2003.02824)][[Spotlight Video](https://youtu.be/sKCXZksFOWA)][[Video (less technical)](https://youtu.be/HxPYhOZco-4)][[Slides](https://www.dropbox.com/s/xj37x5xpmqg70ln/Spotlight_SSTDA_CVPR_2020_mute.pdf?dl=0)]
+[[arXiv](https://arxiv.org/abs/2003.02824)][[Project](https://minhungchen.netlify.app/project/cdas/)][[Spotlight Video](https://youtu.be/sKCXZksFOWA)][[Video (less technical)](https://youtu.be/HxPYhOZco-4)][[Poster](https://www.dropbox.com/s/fm6cmwgzrjslvbd/CVPR2020_Steve_SSTDA_poster_v1.pdf?dl=0)][[Slides](https://www.dropbox.com/s/xj37x5xpmqg70ln/Spotlight_SSTDA_CVPR_2020_mute.pdf?dl=0)][[Open Access](http://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Action_Segmentation_With_Joint_Self-Supervised_Temporal_Domain_Adaptation_CVPR_2020_paper.html)]
 
 <p align="center">
 <img src="webpage/Overview.png?raw=true" width="70%">
