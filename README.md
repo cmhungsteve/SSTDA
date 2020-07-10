@@ -8,9 +8,10 @@
 This is the official PyTorch implementation of our paper:
 
 **Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation**  
-[__***Min-Hung Chen***__](https://www.linkedin.com/in/chensteven), [Baopu Li](https://www.linkedin.com/in/paul-lee-46b2382b/), [Yingze Bao](https://www.linkedin.com/in/yingze/), [Ghassan AlRegib (Advisor)](https://ghassanalregib.info/), and [Zsolt Kira](https://www.cc.gatech.edu/~zk15/) <br>
+[__***Min-Hung Chen***__](https://minhungchen.netlify.app/), [Baopu Li](https://www.linkedin.com/in/paul-lee-46b2382b/), [Yingze Bao](https://www.linkedin.com/in/yingze/), [Ghassan AlRegib (Advisor)](https://ghassanalregib.info/), and [Zsolt Kira](https://www.cc.gatech.edu/~zk15/) <br>
 [*IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020*](http://cvpr2020.thecvf.com/)   
-[[arXiv](https://arxiv.org/abs/2003.02824)][[Project](https://minhungchen.netlify.app/project/cdas/)][[Spotlight Video](https://youtu.be/sKCXZksFOWA)][[Video (less technical)](https://youtu.be/HxPYhOZco-4)][[Poster](https://www.dropbox.com/s/fm6cmwgzrjslvbd/CVPR2020_Steve_SSTDA_poster_v1.pdf?dl=0)][[Slides](https://www.dropbox.com/s/xj37x5xpmqg70ln/Spotlight_SSTDA_CVPR_2020_mute.pdf?dl=0)][[Open Access](http://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Action_Segmentation_With_Joint_Self-Supervised_Temporal_Domain_Adaptation_CVPR_2020_paper.html)]
+[[arXiv](https://arxiv.org/abs/2003.02824)][[1-min Video](https://youtu.be/sKCXZksFOWA)][[5-min Video](https://youtu.be/16OTdVeKahs)][[Poster](https://www.dropbox.com/s/fm6cmwgzrjslvbd/CVPR2020_Steve_SSTDA_poster_v1.pdf?dl=0)][[Slides](https://www.dropbox.com/s/xj37x5xpmqg70ln/Spotlight_SSTDA_CVPR_2020_mute.pdf?dl=0)][[Open Access](http://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Action_Segmentation_With_Joint_Self-Supervised_Temporal_Domain_Adaptation_CVPR_2020_paper.html)]<br>
+[[Project](https://minhungchen.netlify.app/project/cdas/)][[Overview Talk](https://youtu.be/HxPYhOZco-4)][[GT@CVPR'20](https://mlgt-at-cvpr-2020.mailchimpsites.com/)]
 
 <p align="center">
 <img src="webpage/Overview.png?raw=true" width="70%">
@@ -43,7 +44,7 @@ cd action-segmentation-DA
 ```
 * Download the [Dataset](https://www.dropbox.com/s/yodx2dknti0ah2v/Datasets.zip?dl=0) folder, which contains the features and the ground truth labels. (~30GB)
  * To avoid the difficulty for downloading the whole file, we also divide it into multiple files:
-  * [GTEA](https://www.dropbox.com/s/6yx5c7dmxx3kbss/gtea.zip?dl=0), [50Salads](https://www.dropbox.com/s/h2s6uwh6md2s06y/50salads.zip?dl=0), [Breakfast-part1](https://www.dropbox.com/s/unj9p34tcutolet/breakfast_part1.zip?dl=0), [Breakfast-part2](https://www.dropbox.com/s/exr5c9cg76r96ma/breakfast_part2.zip?dl=0), [Breakfast-part3](https://www.dropbox.com/s/2dstt7iuhvcoa40/breakfast_part3.zip?dl=0), [Breakfast-part4](https://www.dropbox.com/s/dbxe2452ypis1n9/breakfast_part4.zip?dl=0), [Breakfast-part5](https://www.dropbox.com/s/5coes7clt4m26uk/breakfast_part5.zip?dl=0)
+    * [GTEA](https://www.dropbox.com/s/6yx5c7dmxx3kbss/gtea.zip?dl=0), [50Salads](https://www.dropbox.com/s/h2s6uwh6md2s06y/50salads.zip?dl=0), [Breakfast-part1](https://www.dropbox.com/s/unj9p34tcutolet/breakfast_part1.zip?dl=0), [Breakfast-part2](https://www.dropbox.com/s/exr5c9cg76r96ma/breakfast_part2.zip?dl=0), [Breakfast-part3](https://www.dropbox.com/s/2dstt7iuhvcoa40/breakfast_part3.zip?dl=0), [Breakfast-part4](https://www.dropbox.com/s/dbxe2452ypis1n9/breakfast_part4.zip?dl=0), [Breakfast-part5](https://www.dropbox.com/s/5coes7clt4m26uk/breakfast_part5.zip?dl=0)
 * Extract it so that you have the `Datasets` folder.
 * The default path for the dataset is `../../Datasets/action-segmentation/` if the current location is `./action-segmentation-DA/`. If you change the dataset path, you need to edit the scripts as well.
 
@@ -93,7 +94,7 @@ If you find this repository useful, please cite our papers:
 
 ---
 ### Acknowledgments
-This work was done with the support from [**OLIVES**](https://ghassanalregib.info/)@GT. <br>
+This work was done with the support from **[OLIVES](https://ghassanalregib.info/)@GT**. <br>
 Feel free to check our lab's [Website](https://ghassanalregib.info/) and [GitHub](https://github.com/olivesgatech) for other interesting work!!!
 
 
@@ -102,6 +103,6 @@ Some codes are borrowed from [ms-tcn](https://github.com/yabufarha/ms-tcn), [TA3
 
 ---
 ### Contact
-[Min-Hung Chen](https://www.linkedin.com/in/chensteven) <br>
+[Min-Hung Chen](https://minhungchen.netlify.app/) <br>
 cmhungsteve AT gatech DOT edu <br>
 [<img align="left" src="webpage/OLIVES_new.png" width="15%">](https://ghassanalregib.info/)
