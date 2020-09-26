@@ -42,7 +42,7 @@ conda env create -f environment.yml
 git clone https://gitlab.svail.baidu.com/steve/action-segmentation-DA.git
 cd action-segmentation-DA
 ```
-* Download the [Dataset](https://www.dropbox.com/s/yodx2dknti0ah2v/Datasets.zip?dl=0) folder, which contains the features and the ground truth labels. (~30GB)
+* Download the [Dataset](https://www.dropbox.com/s/kc1oyz79rr2znmh/Datasets.zip?dl=0) folder, which contains the features and the ground truth labels. (~30GB)
  * To avoid the difficulty for downloading the whole file, we also divide it into multiple files:
     * [GTEA](https://www.dropbox.com/s/f0bxg73l62v9yo6/gtea.zip?dl=0), [50Salads](https://www.dropbox.com/s/1vzeidtkzjef7vy/50salads.zip?dl=0), [Breakfast-part1](https://www.dropbox.com/s/xgeffaqs5cbbs4l/breakfast_part1.zip?dl=0), [Breakfast-part2](https://www.dropbox.com/s/mcpj4ny85c1xgvv/breakfast_part2.zip?dl=0), [Breakfast-part3](https://www.dropbox.com/s/o8ba90n7o3rxqun/breakfast_part3.zip?dl=0), [Breakfast-part4](https://www.dropbox.com/s/v1vx55zud97x544/breakfast_part4.zip?dl=0), [Breakfast-part5](https://www.dropbox.com/s/e635tkwpd22dlt9/breakfast_part5.zip?dl=0)
 * Extract it so that you have the `Datasets` folder.
