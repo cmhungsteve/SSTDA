@@ -39,8 +39,7 @@ conda env create -f environment.yml
 ## Data Preparation
 * Clone the this repository:
 ```
-git clone https://gitlab.svail.baidu.com/steve/action-segmentation-DA.git
-cd action-segmentation-DA
+git clone https://github.com/cmhungsteve/SSTDA.git
 ```
 * Download the [Dataset](https://www.dropbox.com/s/kc1oyz79rr2znmh/Datasets.zip?dl=0) folder, which contains the features and the ground truth labels. (~30GB)
  * To avoid the difficulty for downloading the whole file, we also divide it into multiple files:
